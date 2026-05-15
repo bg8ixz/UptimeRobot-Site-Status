@@ -91,9 +91,13 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiUrl: process.env.API_URL || "https://api.uptimerobot.com/v2/",
     apiKey: process.env.API_KEY,
-    sitePassword: process.env.SITE_PASSWORD,
     siteSecretKey: process.env.SITE_SECRE_KEY || "site-status",
-    public: siteConfig,
+
+    // 公开给前端用修改菜单现实逻辑
+    public: {
+      ...siteConfig,
+      sitePassword: process.env.SITE_PASSWORD || "", 
+    },
   },
   devServer: { port: 8566 },
   future: { compatibilityVersion: 4 },

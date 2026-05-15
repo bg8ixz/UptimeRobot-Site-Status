@@ -105,7 +105,8 @@ const navMenu = computed<DropdownOption[]>(() => [
   {
     key: "logout",
     label: t("nav.logout"),
-    show: sitePassword && statusStore.loginStatus,
+    // 只有设置了密码 + 已登录 才显示
+    show: !!config.public.sitePassword && statusStore.loginStatus,
     icon: renderIcon("icon:logout"),
     props: {
       onClick: () => {
