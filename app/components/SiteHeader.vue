@@ -144,7 +144,7 @@ const { pause: pauseTime, resume: resumeTime } = useIntervalFn(
 <style lang="scss" scoped>
 header {
   position: relative;
-  height: 44vh;
+  height: 34vh;
   width: 100%;
   color: white;
   .status-cover {
