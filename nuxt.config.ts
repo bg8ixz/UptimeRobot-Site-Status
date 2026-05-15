@@ -13,6 +13,7 @@ const siteConfig = {
   siteLogo: process.env.SITE_LOGO || "/favicon.ico",
   siteIcp: process.env.SITE_ICP || "",
   countDays: Number(process.env.COUNT_DAYS || 60),
+  showLink: process.env.SHOW_LINKS === "true",
   platform: process.env.DEPLOYMENT_PLATFORM || "cloudflare",
   version: pkg.version,
 };
@@ -92,10 +93,7 @@ export default defineNuxtConfig({
     apiKey: process.env.API_KEY,
     sitePassword: process.env.SITE_PASSWORD,
     siteSecretKey: process.env.SITE_SECRE_KEY || "site-status",
-    public: {
-      ...siteConfig,
-      showLink: process.env.SHOW_LINKS === "true",
-    },
+    public: siteConfig,
   },
   devServer: { port: 8566 },
   future: { compatibilityVersion: 4 },
