@@ -76,6 +76,8 @@ const renderIcon = (icon: string) => () =>
   h(NIcon, null, () => h(Icon, { name: icon }));
 
 // 导航栏菜单
+const { sitePassword } = config;
+
 const navMenu = computed<DropdownOption[]>(() => [
   {
     key: "github",
@@ -103,7 +105,7 @@ const navMenu = computed<DropdownOption[]>(() => [
   {
     key: "logout",
     label: t("nav.logout"),
-    show: statusStore.loginStatus,
+    show: sitePassword && statusStore.loginStatus,
     icon: renderIcon("icon:logout"),
     props: {
       onClick: () => {
