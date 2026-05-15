@@ -92,6 +92,7 @@ export default defineNuxtConfig({
     apiUrl: process.env.API_URL || "https://api.uptimerobot.com/v2/",
     apiKey: process.env.API_KEY,
     siteSecretKey: process.env.SITE_SECRE_KEY || "site-status",
+    sitePassword: process.env.SITE_PASSWORD || "",
 
     // 公开给前端用修改菜单现实逻辑
     public: {
