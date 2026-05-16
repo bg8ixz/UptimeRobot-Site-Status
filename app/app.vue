@@ -20,6 +20,8 @@
           <SiteLogin v-if="!statusStore.loginStatus" />
           <!-- 站点内容 -->
           <div v-else>
+            <!-- 站点卡片 -->
+            <SiteCards />
             <!-- Overall Uptime -->
             <Transition name="fade">
               <OverallUptime
@@ -27,8 +29,6 @@
                 :sites="statusStore.siteData.data"
               />
             </Transition>
-            <!-- 站点卡片 -->
-            <SiteCards />
           </div>
         </Transition>
       </main>

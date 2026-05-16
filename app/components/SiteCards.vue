@@ -3,7 +3,7 @@
   <Transition name="fade" mode="out-in">
     <div v-if="!isEmpty(siteData)" class="site-cards">
       <h2 v-if="showOverallUptime" class="overall-title">
-        <span class="uptime-text">Uptime</span>
+        <span class="uptime-text">{{ $t("overall.uptime") }}</span>
         <span class="days-text">{{ $t("overall.lastXDays", { days: countDays }) }}</span>
       </h2>
       <n-card v-if="showOverallUptime" class="overall-card" hoverable>

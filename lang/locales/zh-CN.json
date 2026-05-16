@@ -9,6 +9,7 @@
   },
   "overall": {
     "title": "总体可用率",
+    "uptime": "可用率",
     "last24Hours": "最近 24 小时",
     "last7Days": "最近 7 天",
     "last30Days": "最近 30 天",
