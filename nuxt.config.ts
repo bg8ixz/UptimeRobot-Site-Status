@@ -14,6 +14,7 @@ const siteConfig = {
   siteIcp: process.env.SITE_ICP || "",
   countDays: Number(process.env.COUNT_DAYS || 60),
   showLink: process.env.SHOW_LINKS === "true",
+  showOverallUptime: process.env.SHOW_OVERALL_UPTIME === "true",
   platform: process.env.DEPLOYMENT_PLATFORM || "cloudflare",
   version: pkg.version,
 };

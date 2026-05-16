@@ -7,6 +7,14 @@
     "error": "すべてのサイトに異常があります",
     "warn": "一部のサイトに異常があります"
   },
+  "overall": {
+    "title": "全体稼働率",
+    "last24Hours": "過去24時間",
+    "last7Days": "過去7日間",
+    "last30Days": "過去30日間",
+    "last90Days": "過去90日間",
+    "uptimeTitle": "稼働率過去{days}日間"
+  },
   "nav": {
     "about": "このサイトについて",
     "logout": "ログアウト"

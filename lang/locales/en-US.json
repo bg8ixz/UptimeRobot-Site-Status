@@ -7,6 +7,14 @@
     "error": "All sites encountered issues",
     "warn": "Some sites encountered issues"
   },
+  "overall": {
+    "title": "Overall Uptime",
+    "last24Hours": "Last 24 hours",
+    "last7Days": "Last 7 days",
+    "last30Days": "Last 30 days",
+    "last90Days": "Last 90 days",
+    "uptimeTitle": "Uptime Last {days} days"
+  },
   "nav": {
     "about": "About this site",
     "logout": "Logout"

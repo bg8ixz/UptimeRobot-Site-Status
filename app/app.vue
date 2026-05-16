@@ -18,8 +18,18 @@
         <Transition name="fade" mode="out-in">
           <!-- 密码验证 -->
           <SiteLogin v-if="!statusStore.loginStatus" />
-          <!-- 站点卡片 -->
-          <SiteCards v-else />
+          <!-- 站点内容 -->
+          <div v-else>
+            <!-- Overall Uptime -->
+            <Transition name="fade">
+              <OverallUptime
+                v-if="config.public.showOverallUptime && statusStore.siteData?.data"
+                :sites="statusStore.siteData.data"
+              />
+            </Transition>
+            <!-- 站点卡片 -->
+            <SiteCards />
+          </div>
         </Transition>
       </main>
       <SiteFooter />

@@ -7,6 +7,14 @@
     "error": "모든 사이트에 이상 발생",
     "warn": "일부 사이트에 이상 발생"
   },
+  "overall": {
+    "title": "전체 가동률",
+    "last24Hours": "최근 24시간",
+    "last7Days": "최근 7일",
+    "last30Days": "최근 30일",
+    "last90Days": "최근 90일",
+    "uptimeTitle": "가동률 최근 {days}일"
+  },
   "nav": {
     "about": "이 사이트에 대해",
     "logout": "로그아웃"
