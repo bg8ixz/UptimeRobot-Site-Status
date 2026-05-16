@@ -90,14 +90,12 @@ const overallData = computed(() => ({
         .percent {
           font-size: 24px;
           font-weight: bold;
-          color: var(--n-color-text-primary);
         }
         .label {
           font-size: 16px;
           font-weight: bold;
           color: #767c82;
           margin-top: 8px;
-          text-align: left;
         }
         @media (max-width: 640px) {
           flex-direction: row;
