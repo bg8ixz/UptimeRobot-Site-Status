@@ -331,7 +331,6 @@ onMounted(getSiteData);
 .site-cards {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   max-width: 900px;
   margin: 30px auto 20px;
   padding: 0 20px;
@@ -358,8 +357,15 @@ onMounted(getSiteData);
         opacity: 0;
         animation: float-up 0.5s forwards;
         padding: 16px;
-        &:not(:last-child) {
-          border-bottom: 1px solid #e5e7eb;
+        position: relative;
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 16px;
+          right: 16px;
+          height: 1px;
+          background-color: #e5e7eb;
         }
         .meta {
           margin-bottom: 8px;
