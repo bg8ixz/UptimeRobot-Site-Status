@@ -331,6 +331,7 @@ onMounted(getSiteData);
 .site-cards {
   display: flex;
   flex-direction: column;
+  gap: 12px;
   max-width: 900px;
   margin: 30px auto 20px;
   padding: 0 20px;
