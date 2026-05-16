@@ -359,7 +359,7 @@ onMounted(getSiteData);
         animation: float-up 0.5s forwards;
         padding: 16px;
         &:not(:last-child) {
-          border-bottom: 1px solid var(--n-color-border);
+          border-bottom: 1px solid #e5e7eb;
         }
         .meta {
           margin-bottom: 8px;

@@ -12,11 +12,11 @@
           <n-text class="label">{{ $t("overall.last7Days") }}</n-text>
         </div>
         <div class="stat-item">
-          <n-text class="percent">{{ overallData.last30DaysPercent.toFixed(3) }}</n-text>
+          <n-text class="percent">{{ overallData.last30DaysPercent.toFixed(3) }}%</n-text>
           <n-text class="label">{{ $t("overall.last30Days") }}</n-text>
         </div>
         <div class="stat-item">
-          <n-text class="percent">{{ overallData.last90DaysPercent.toFixed(3) }}</n-text>
+          <n-text class="percent">{{ overallData.last90DaysPercent.toFixed(3) }}%</n-text>
           <n-text class="label">{{ $t("overall.last90Days") }}</n-text>
         </div>
       </div>
@@ -81,7 +81,7 @@ const overallData = computed(() => ({
         align-items: center;
         padding: 12px 16px;
         &:not(:last-child) {
-          border-right: 1px solid var(--n-color-border);
+          border-right: 1px solid #e5e7eb;
         }
         .percent {
           font-size: 24px;
