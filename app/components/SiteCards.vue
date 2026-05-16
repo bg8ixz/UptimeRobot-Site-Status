@@ -341,10 +341,12 @@ onMounted(getSiteData);
     .uptime-text {
       color: var(--n-color-text-primary);
     }
+    // 最近 X 天
     .days-text {
-      color: var(--n-color-text-tertiary);
+      color: var(--n-text-color, #767c82);
       margin-left: 8px;
-      font-weight: normal;
+      font-weight: bold;
+      font-size: 18px;
     }
   }
   .overall-card {
