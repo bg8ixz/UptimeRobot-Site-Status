@@ -97,7 +97,8 @@ const navMenu = computed<DropdownOption[]>(() => [
           title: t("nav.about"),
           content: `<div style="white-space: pre-line;">${t("about.title")}\n${t("about.version")}: ${config.public.version}\n\n${t("about.description")}</div>`,
           positiveText: t("about.ok"),
-          transformOrigin: "center"
+          transformOrigin: "center",
+          dangerouslyUseHTMLString: true
         });
       },
     },
