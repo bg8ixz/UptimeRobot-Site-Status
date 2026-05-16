@@ -343,7 +343,7 @@ onMounted(getSiteData);
       color: var(--n-color-text-primary);
     }
     .days-text {
-      color: var(--n-color-text-secondary);
+      color: var(--n-color-text-tertiary);
       margin-left: 8px;
       font-weight: normal;
     }
@@ -354,14 +354,13 @@ onMounted(getSiteData);
     .site-list {
       display: flex;
       flex-direction: column;
-      gap: 12px;
       .site-item {
         opacity: 0;
-        border-radius: 8px;
         animation: float-up 0.5s forwards;
-        padding: 12px;
-        background: var(--n-color-bg-elevated);
-        border: 1px solid var(--n-color-border);
+        padding: 16px;
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--n-color-border);
+        }
         .meta {
           margin-bottom: 8px;
           .site-name {
