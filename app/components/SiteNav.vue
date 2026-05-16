@@ -95,7 +95,7 @@ const navMenu = computed<DropdownOption[]>(() => [
       onClick: () => {
         window.$dialog.info({
           title: t("nav.about"),
-          content: `${t("about.title")}\n${t("about.version")}: ${config.public.version}\n\n${t("about.description")}`,
+          content: `<div style="white-space: pre-line;">${t("about.title")}\n${t("about.version")}: ${config.public.version}\n\n${t("about.description")}</div>`,
           positiveText: t("about.ok"),
           transformOrigin: "center"
         });
