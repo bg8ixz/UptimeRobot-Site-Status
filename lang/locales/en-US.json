@@ -3,7 +3,7 @@
   "site": {
     "loading": "Site status loading",
     "unknown": "Site status unknown",
-    "normal": "Site is running normally",
+    "normal": "All systems Operational",
     "error": "All sites encountered issues",
     "warn": "Some sites encountered issues"
   },

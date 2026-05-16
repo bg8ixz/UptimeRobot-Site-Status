@@ -97,6 +97,7 @@ const overallData = computed(() => ({
           font-weight: bold;
           color: #767c82;
           margin-top: 8px;
+          text-align: left;
         }
         @media (max-width: 640px) {
           flex-direction: row;
