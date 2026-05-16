@@ -13,7 +13,7 @@
     "last7Days": "過去7日間",
     "last30Days": "過去30日間",
     "last90Days": "過去90日間",
-    "uptimeTitle": "稼働率過去{days}日間"
+    "lastXDays": "過去{days}日間"
   },
   "nav": {
     "about": "このサイトについて",

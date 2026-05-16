@@ -13,7 +13,7 @@
     "last7Days": "最近 7 天",
     "last30Days": "最近 30 天",
     "last90Days": "最近 90 天",
-    "uptimeTitle": "可用率最近 {days} 天"
+    "lastXDays": "最近 {days} 天"
   },
   "nav": {
     "about": "关于本站",

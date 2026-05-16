@@ -2,8 +2,11 @@
 <template>
   <Transition name="fade" mode="out-in">
     <div v-if="!isEmpty(siteData)" class="site-cards">
+      <h2 v-if="showOverallUptime" class="overall-title">
+        <span class="uptime-text">Uptime</span>
+        <span class="days-text">{{ $t("overall.lastXDays", { days: countDays }) }}</span>
+      </h2>
       <n-card v-if="showOverallUptime" class="overall-card" hoverable>
-        <h2 class="overall-title">{{ $t("overall.uptimeTitle", { days: countDays }) }}</h2>
         <div class="site-list">
           <div
             v-for="(site, index) in siteData"
@@ -11,7 +14,7 @@
             :style="{ animationDelay: `${index * 0.1}s` }"
             class="site-item"
           >
-        <!-- 信息 -->
+            <!-- 信息 -->
         <n-flex class="meta" justify="space-between">
           <n-flex :size="8" class="title" align="center">
             <n-text class="site-name">{{ site.name }}</n-text>
@@ -332,15 +335,22 @@ onMounted(getSiteData);
   max-width: 900px;
   margin: 30px auto 20px;
   padding: 0 20px;
+  .overall-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+    .uptime-text {
+      color: var(--n-color-text-primary);
+    }
+    .days-text {
+      color: var(--n-color-text-secondary);
+      margin-left: 8px;
+      font-weight: normal;
+    }
+  }
   .overall-card {
     border-radius: 12px;
     overflow: hidden;
-    .overall-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin: 0 0 16px 0;
-      color: var(--n-color-text-primary);
-    }
     .site-list {
       display: flex;
       flex-direction: column;
