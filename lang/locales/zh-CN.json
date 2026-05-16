@@ -22,7 +22,8 @@
   },
   "about": {
     "title": "项目名称",
-    "version": "版本号",
+    "version": "当前版本",
+    "desc_title": "项目说明",
     "description": "一个简约的站点监测页面，基于 UptimeRobot API 构建。",
     "ok": "确定"
   },

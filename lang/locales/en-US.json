@@ -22,7 +22,8 @@
   },
   "about": {
     "title": "Project Name",
-    "version": "Version",
+    "version": "Current Version",
+    "desc_title": "Project Description",
     "description": "A simple site monitoring page built on the UptimeRobot API.",
     "ok": "OK"
   },

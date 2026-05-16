@@ -105,6 +105,8 @@ const navMenu = computed<DropdownOption[]>(() => [
             h("span", { style: "font-weight: bold;" }, "："),
             config.public.version, 
             h("br"),
+            h("span", { style: "font-weight: bold;" }, t("about.ddesc_title")),
+            h("span", { style: "font-weight: bold;" }, "："),
             t("about.description"),
           ]),
           positiveText: t("about.ok"),

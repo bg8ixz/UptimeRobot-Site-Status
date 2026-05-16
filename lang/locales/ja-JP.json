@@ -22,7 +22,8 @@
   },
   "about": {
     "title": "プロジェクト名",
-    "version": "バージョン",
+    "version": "現在のバージョン",
+    "desc_title": "プロジェクト説明",
     "description": "UptimeRobot API を基に構築された、シンプルなサイト監視ページです。",
     "ok": "OK"
   },
