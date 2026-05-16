@@ -346,7 +346,7 @@ onMounted(getSiteData);
       color: var(--n-text-color, #767c82);
       margin-left: 8px;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
     }
   }
   .overall-card {

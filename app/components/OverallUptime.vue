@@ -93,8 +93,9 @@ const overallData = computed(() => ({
           color: var(--n-color-text-primary);
         }
         .label {
-          font-size: 14px;
-          color: var(--n-color-text-tertiary);
+          font-size: 16px;
+          font-weight: bold;
+          color: var(--n-text-color, #767c82);
           margin-top: 8px;
         }
         @media (max-width: 640px) {
