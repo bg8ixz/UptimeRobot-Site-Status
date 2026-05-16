@@ -93,12 +93,20 @@ const navMenu = computed<DropdownOption[]>(() => [
     icon: renderIcon("icon:info"),
     props: {
       onClick: () => {
+        const aboutContent = `
+          <div style="white-space: pre-line; line-height: 1.6;">
+            ${t("about.title")}
+            ${t("about.version")}: ${config.public.version}
+
+            ${t("about.description")}
+          </div>
+        `;
         window.$dialog.info({
           title: t("nav.about"),
-          content: `<div style="white-space: pre-line;">${t("about.title")}\n${t("about.version")}: ${config.public.version}\n\n${t("about.description")}</div>`,
+          content: aboutContent,
           positiveText: t("about.ok"),
           transformOrigin: "center",
-          dangerouslyUseHTMLString: true
+          dangerouslyUseHTMLString: true,
         });
       },
     },
