@@ -96,11 +96,14 @@ const navMenu = computed<DropdownOption[]>(() => [
       onClick: () => {
         window.$dialog.info({
           title: t("nav.about"),
-          content: () => h("div", { style: "white-space: pre-line; line-height: 1.6;" }, [
-            t("about.title"),
+          content: () => h("div", { style: "line-height: 1.8; font-size: 14px;" },  [
+            h("span", { style: "font-weight: bold;" }, t("about.title")),
+            h("span", { style: "font-weight: bold;" }, "："),
+            "UptimeRobot-Site-Status",
             h("br"),
-            `${t("about.version")}: ${config.public.version}`,
-            h("br"),
+            h("span", { style: "font-weight: bold;" }, t("about.version")),
+            h("span", { style: "font-weight: bold;" }, "："),
+            config.public.version, 
             h("br"),
             t("about.description"),
           ]),

@@ -21,7 +21,7 @@
     "logout": "Logout"
   },
   "about": {
-    "title": "UptimeRobot-Site-Status",
+    "title": "Project Name",
     "version": "Version",
     "description": "A simple site monitoring page built on the UptimeRobot API.",
     "ok": "OK"
