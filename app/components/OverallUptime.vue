@@ -74,6 +74,10 @@ const overallData = computed(() => ({
     .stats {
       display: flex;
       padding: 24px;
+      @media (max-width: 640px) {
+        flex-direction: column;
+        padding: 16px;
+      }
       .stat-item {
         flex: 1;
         display: flex;
@@ -92,6 +96,22 @@ const overallData = computed(() => ({
           font-size: 14px;
           color: var(--n-color-text-tertiary);
           margin-top: 8px;
+        }
+        @media (max-width: 640px) {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 0;
+          &:not(:last-child) {
+            border-right: none;
+            border-bottom: 1px solid #e5e7eb;
+          }
+          .percent {
+            font-size: 20px;
+          }
+          .label {
+            margin-top: 0;
+          }
         }
       }
     }
