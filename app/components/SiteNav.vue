@@ -64,6 +64,7 @@
 <script setup lang="ts">
 import { NIcon, type DropdownOption } from "naive-ui";
 import { Icon } from "#components";
+import { h } from "vue";
 import { langData } from "~/assets/data/text";
 
 const { t } = useI18n();
@@ -93,20 +94,18 @@ const navMenu = computed<DropdownOption[]>(() => [
     icon: renderIcon("icon:info"),
     props: {
       onClick: () => {
-        const aboutContent = `
-          <div style="white-space: pre-line; line-height: 1.6;">
-            ${t("about.title")}
-            ${t("about.version")}: ${config.public.version}
-
-            ${t("about.description")}
-          </div>
-        `;
         window.$dialog.info({
           title: t("nav.about"),
-          content: aboutContent,
+          content: () => h("div", { style: "white-space: pre-line; line-height: 1.6;" }, [
+            t("about.title"),
+            h("br"),
+            `${t("about.version")}: ${config.public.version}`,
+            h("br"),
+            h("br"),
+            t("about.description"),
+          ]),
           positiveText: t("about.ok"),
           transformOrigin: "center",
-          dangerouslyUseHTMLString: true,
         });
       },
     },
