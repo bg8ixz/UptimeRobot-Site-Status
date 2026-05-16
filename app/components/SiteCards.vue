@@ -331,7 +331,6 @@ onMounted(getSiteData);
 .site-cards {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   max-width: 900px;
   margin: 30px auto 20px;
   padding: 0 20px;
@@ -446,6 +445,12 @@ onMounted(getSiteData);
     border-radius: 12px;
     animation: float-up 0.5s forwards;
     overflow: hidden;
+    &:not(.site-list > .site-item) {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     .meta {
       .site-name {
         font-weight: bold;
