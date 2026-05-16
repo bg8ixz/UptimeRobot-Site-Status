@@ -95,10 +95,10 @@ const navMenu = computed<DropdownOption[]>(() => [
       onClick: () => {
         window.$dialog.info({
           title: t("nav.about"),
-          content: `${t("about.title")}<br>${t("about.version")}: ${config.public.version}<br><br>${t("about.description")}`,
+          content: `<div>${t("about.title")}</div><div>${t("about.version")}: ${config.public.version}</div><div style="height: 8px;"></div><div>${t("about.description")}</div>`,
           positiveText: t("about.ok"),
           transformOrigin: "center",
-          dangerouslyUseHTMLString: true // 开启HTML解析
+          dangerouslyUseHTMLString: true
         });
       },
     },
