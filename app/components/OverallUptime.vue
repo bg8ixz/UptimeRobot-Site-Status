@@ -95,7 +95,7 @@ const overallData = computed(() => ({
         .label {
           font-size: 16px;
           font-weight: bold;
-          color: var(--n-text-color, #767c82);
+          color: #767c82;
           margin-top: 8px;
         }
         @media (max-width: 640px) {
