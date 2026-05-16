@@ -21,6 +21,8 @@
     "logout": "退出登录"
   },
   "about": {
+    "title": "UptimeRobot-Site-Status",
+    "version": "版本号",
     "description": "一个简约的站点监测页面，基于 UptimeRobot API 构建。",
     "ok": "确定"
   },

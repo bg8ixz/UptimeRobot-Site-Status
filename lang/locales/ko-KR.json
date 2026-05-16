@@ -21,6 +21,8 @@
     "logout": "로그아웃"
   },
   "about": {
+    "title": "UptimeRobot-Site-Status",
+    "version": "버전",
     "description": "UptimeRobot API를 기반으로 구축된 간단한 사이트 모니터링 페이지입니다.",
     "ok": "OK"
   },

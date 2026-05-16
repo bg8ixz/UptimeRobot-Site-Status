@@ -21,6 +21,8 @@
     "logout": "ログアウト"
   },
   "about": {
+    "title": "UptimeRobot-Site-Status",
+    "version": "バージョン",
     "description": "UptimeRobot API を基に構築された、シンプルなサイト監視ページです。",
     "ok": "OK"
   },
