@@ -53,6 +53,7 @@
 </template>
 
 <script setup lang="ts">
+import { NTooltip } from "naive-ui";
 const { public: configPublic } = useRuntimeConfig();
 const { siteIcp, version, githubUrl, homeUrl, email } = configPublic;
 
