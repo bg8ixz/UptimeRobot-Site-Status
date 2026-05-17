@@ -78,6 +78,9 @@ const renderIcon = (icon: string) => () =>
 
 // 导航栏菜单
 const { sitePassword } = config;
+const { githubUrl } = config.public;
+const defaultGithubUrl = "https://github.com/bg8ixz/UptimeRobot-Site-Status";
+const actualGithubUrl = githubUrl || defaultGithubUrl;
 
 const navMenu = computed<DropdownOption[]>(() => [
   {
@@ -85,7 +88,7 @@ const navMenu = computed<DropdownOption[]>(() => [
     label: "GitHub",
     icon: renderIcon("icon:github"),
     props: {
-      onClick: () => window.open("https://github.com/bg8ixz/UptimeRobot-Site-Status"),
+      onClick: () => window.open(actualGithubUrl),
     },
   },
   {

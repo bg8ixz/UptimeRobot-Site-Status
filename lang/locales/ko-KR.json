@@ -37,7 +37,10 @@
     "basedOn": "기반",
     "interface": "인터페이스",
     "checkFrequency": "체크 주기",
-    "fiveMinutes": "5 분"
+    "fiveMinutes": "5 분",
+    "github": "GitHub",
+    "home": "홈페이지",
+    "email": "이메일 보내기"
   },
   "card": {
     "unknownDate": "알 수 없는 날짜",

@@ -37,7 +37,10 @@
     "basedOn": "基づいています",
     "interface": "インターフェース",
     "checkFrequency": "チェック頻度",
-    "fiveMinutes": "5分"
+    "fiveMinutes": "5分",
+    "github": "GitHub",
+    "home": "ホームページ",
+    "email": "メールを送信"
   },
   "card": {
     "unknownDate": "不明な日付",

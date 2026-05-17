@@ -37,7 +37,10 @@
     "basedOn": "Based on",
     "interface": "Interface",
     "checkFrequency": "Check Frequency",
-    "fiveMinutes": "5 minutes"
+    "fiveMinutes": "5 minutes",
+    "github": "GitHub",
+    "home": "Homepage",
+    "email": "Send Email"
   },
   "card": {
     "unknownDate": "Unknown date",

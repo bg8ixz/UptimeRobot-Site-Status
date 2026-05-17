@@ -37,7 +37,10 @@
     "basedOn": "基于",
     "interface": "接口",
     "checkFrequency": "检测频率",
-    "fiveMinutes": "5 分钟"
+    "fiveMinutes": "5 分钟",
+    "github": "GitHub",
+    "home": "个人主页",
+    "email": "发送邮件"
   },
   "card": {
     "unknownDate": "未知日期",

@@ -1,18 +1,25 @@
 <template>
   <footer id="footer">
     <n-flex class="link" align="center">
-      <n-button
+      <n-tooltip
         v-for="(item, key, index) in linkData"
         :key="index"
-        :focusable="false"
-        quaternary
-        circle
-        @click="jumpLink(item)"
+        :trigger="['hover']"
       >
-        <template #icon>
-          <Icon :name="`icon:${key}`" />
+        <template #trigger>
+          <n-button
+            :focusable="false"
+            quaternary
+            circle
+            @click="jumpLink(item)"
+          >
+            <template #icon>
+              <Icon :name="`icon:${key}`" />
+            </template>
+          </n-button>
         </template>
-      </n-button>
+        {{ $t(`footer.${key}`) }}
+      </n-tooltip>
     </n-flex>
     <n-flex :size="4" class="text" align="center" vertical>
       <n-p depth="3">
