@@ -47,12 +47,18 @@
 
 <script setup lang="ts">
 const { public: configPublic } = useRuntimeConfig();
-const { siteIcp, version } = configPublic;
+const { siteIcp, version, githubUrl, homeUrl, email } = configPublic;
 
-const linkData = {
+const defaultLinkData = {
   github: "https://github.com/bg8ixz/UptimeRobot-Site-Status",
   home: "https://www.imkee.com",
   email: "mailto:bg8ixz@foxmail.com",
+};
+
+const linkData = {
+  github: githubUrl || defaultLinkData.github,
+  home: homeUrl || defaultLinkData.home,
+  email: email || defaultLinkData.email,
 };
 </script>
 

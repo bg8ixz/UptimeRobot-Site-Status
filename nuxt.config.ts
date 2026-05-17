@@ -17,6 +17,9 @@ const siteConfig = {
   showOverallUptime: process.env.SHOW_OVERALL_UPTIME === "true",
   platform: process.env.DEPLOYMENT_PLATFORM || "cloudflare",
   version: pkg.version,
+  githubUrl: process.env.GITHUB_URL || "",
+  homeUrl: process.env.HOME_URL || "",
+  email: process.env.EMAIL || "",
 };
 
 export default defineNuxtConfig({
