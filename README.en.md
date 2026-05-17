@@ -28,6 +28,7 @@ English | [简体中文](./README.md)
 - 👀 Overall site status preview
 - ⏲️ Data auto-refresh
 - 📱 Mobile-friendly design
+- 🔗 Supports custom Github, homepage, and email links
 
 ## Prerequisites
 
@@ -82,6 +83,9 @@ This project is deployed by default using [Cloudflare Pages](https://pages.cloud
   | SITE_KEYWORDS               | site monitor, monitoring, uptime        | Site keywords                                    |
   | SITE_ICP                    |                                         | Site ICP filing number                           |
   | SITE_SECRE_KEY              | Generate a random string yourself        | Site encryption key                              |
+  | GITHUB_URL                  |                                         | Optional                                         |
+  | HOME_URL                    |                                         | Optional                                         |
+  | EMAIL                       |                                         | Optional                                         |
 
 ### Other Hosting Platforms
 
