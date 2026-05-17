@@ -1,25 +1,19 @@
 <template>
   <footer id="footer">
     <n-flex class="link" align="center">
-      <n-tooltip
+      <n-button
         v-for="(item, key, index) in linkData"
         :key="index"
-        :trigger="['hover']"
+        :focusable="false"
+        quaternary
+        circle
+        :title="$t(`footer.${key}`)"
+        @click="jumpLink(item)"
       >
-        <template #trigger>
-          <n-button
-            :focusable="false"
-            quaternary
-            circle
-            @click="jumpLink(item)"
-          >
-            <template #icon>
-              <Icon :name="`icon:${key}`" />
-            </template>
-          </n-button>
+        <template #icon>
+          <Icon :name="`icon:${key}`" />
         </template>
-        {{ $t(`footer.${key}`) }}
-      </n-tooltip>
+      </n-button>
     </n-flex>
     <n-flex :size="4" class="text" align="center" vertical>
       <n-p depth="3">
@@ -53,7 +47,6 @@
 </template>
 
 <script setup lang="ts">
-import { NTooltip } from "naive-ui";
 const { public: configPublic } = useRuntimeConfig();
 const { siteIcp, version, githubUrl, homeUrl, email } = configPublic;
 
